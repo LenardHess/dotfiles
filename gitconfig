@@ -1,0 +1,33 @@
+[alias]
+	a = add -p
+	c = commit
+	cm = commit -m
+	ca = commit -a
+	can = commit --amend --no-edit
+	d = diff
+	dl = diff HEAD~ HEAD
+	ds = diff --staged
+	f = fetch --all
+	ff = merge --ff-only
+	rb = rebase -i --autostash
+	rba = rebase --abort
+	rbc = rebase --continue
+	s = status
+	sw = switch
+	subd=submodule foreach 'git diff'
+	subs=submodule foreach 'git status'
+	whoami = rev-parse --short=7 HEAD
+	whoami-full = rev-parse HEAD
+	yeet = git checkout -p
+[core]
+	whitespace=trailing-space,space-before-tab,cr-at-eol
+[diff]
+	submodule=log
+[init]
+	defaultBranch = master
+[rebase]
+	abbreviatecommands = true
+[status]
+	showstash = true
+[include]
+	path=~/dotfiles/machine/gitconfig

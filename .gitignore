@@ -1,0 +1,4 @@
+# Exclude the machine-specific files except for the examples and the README
+machine/
+!machine/*.example
+!machine/README.md
