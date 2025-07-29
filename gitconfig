@@ -2,7 +2,7 @@
 	a = add -p
 	c = commit
 	cm = commit -m
-	ca = commit -a
+	ca = commit --amend
 	can = commit --amend --no-edit
 	d = diff
 	dl = diff HEAD~ HEAD
@@ -18,7 +18,7 @@
 	subs=submodule foreach 'git status'
 	whoami = rev-parse --short=7 HEAD
 	whoami-full = rev-parse HEAD
-	yeet = git checkout -p
+	yeet = checkout -p
 [core]
 	whitespace=trailing-space,space-before-tab,cr-at-eol
 [diff]
