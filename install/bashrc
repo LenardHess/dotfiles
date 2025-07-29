@@ -1,0 +1,16 @@
+#
+# Lenard's sample file for ~/.bashrc
+# This file does the bare minimum to include the generic
+# bashrc dotfile. Any settings specific to this machine should be
+# put into dotfiles/machine/bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Change this line if the dotfiles are elsewhere
+export DOTFILES=$HOME/dotfiles
+
+# Import the generic bashrc from dotfiles
+if [ -f $DOTFILES/bashrc ]; then
+	source $DOTFILES/bashrc
+fi
