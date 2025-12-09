@@ -9,6 +9,7 @@
 	ds = diff --staged
 	f = fetch --all
 	ff = merge --ff-only
+	pushf = push --force-with-lease
 	rb = rebase -i --autostash
 	rba = rebase --abort
 	rbc = rebase --continue
@@ -16,6 +17,7 @@
 	sw = switch
 	subd=submodule foreach 'git diff'
 	subs=submodule foreach 'git status'
+	subup=submodule update
 	whoami = rev-parse --short=7 HEAD
 	whoami-full = rev-parse HEAD
 	yeet = checkout -p
