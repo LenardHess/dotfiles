@@ -31,5 +31,7 @@
 	abbreviatecommands = true
 [status]
 	showstash = true
+[gui]
+	encoding = utf-8
 [include]
 	path=~/dotfiles/machine/gitconfig
