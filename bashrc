@@ -12,7 +12,10 @@ alias grep='grep --color=auto'
 
 ### Git
 [ -f /usr/share/bash-completion/completions/git ] && . /usr/share/bash-completion/completions/git
+# The first one is present in git for windows, the second one on arch
 [ -f /usr/lib/git-core/git-sh-prompt ] && . /usr/lib/git-core/git-sh-prompt
+[ -f /usr/share/git/git-prompt.sh ] && . /usr/share/git/git-prompt.sh
+
 alias g='git'
 __git_complete g __git_main
 alias gui='gitk --all &'
